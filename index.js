@@ -4,6 +4,7 @@ const app = express()
 app.use(express.json())
 const cors = require('cors')
 app.use(cors())
+app.use(express.static('dist'))
 
 var morgan = require('morgan')
 //app.use(morgan('tiny')) //Может надо убрать
